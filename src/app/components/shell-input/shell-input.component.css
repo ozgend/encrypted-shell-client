@@ -1,0 +1,31 @@
+*{
+    color:#182;   
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.error{
+    color:#811;
+}
+
+.cli{
+    padding:12px;
+}
+
+
+.prompt input{
+    background: none;
+    border:none;
+    outline: none;
+    color:#182;
+    cursor: text; 
+    min-width: 40%;
+}
+
+.inline{
+    display:inline;
+}
+
+.block{
+    display:block;
+}

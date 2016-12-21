@@ -1,0 +1,16 @@
+<div class="cli">
+
+  <div *ngIf="shellCommands.length>0" class="result">
+    <div *ngFor="let item of shellCommands">
+      <pre class="block">{{item.cwd}} .$ {{item.command}}</pre>
+      <pre class="block" *ngIf="item.stdOut">{{item.stdOut}}</pre>
+      <pre class="block error" *ngIf="item.stdError">{{item.stdError}}</pre>
+    </div>
+  </div>
+
+  <div class="prompt">
+    <span class="inline">{{prompt}} .$</span>
+    <input class="inline" [(ngModel)]="command" (keyup)="onKeyEvent($event)" />
+  </div>
+
+</div>
